@@ -1,6 +1,6 @@
 # Contains Ads
 
-Checks if the specified url is an ad. Fork of `is-ad`/`contains-ads`
+Checks if the specified URL is an ad. Fork of `is-ad`/`contains-ads`. I forked this for use in Skate Browser
 
 ```sh
 $ npm i frozen-software/contains-ads
