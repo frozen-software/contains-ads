@@ -1,9 +1,9 @@
 # Contains Ads
 
-Checks if the specified url contains advertisements.
+Checks if the specified url is an ad. Fork of `is-ad`/`contains-ads`
 
 ```sh
-$ yarn add contains-ads
+$ npm i frozen-software/contains-ads
 ```
 
 ```js
@@ -11,8 +11,8 @@ const { client, initialize, containsAds } = require('contains-ads');
 
 initialize().then(() => {
 
-  // Easylist is the used by default, but you can add custom rules.
-  // Visit abp for more information (https://adblockplus.org/filters).
+  // Easylist is the default, but you can add custom rules.
+  // Visit ABP for more information (https://adblockplus.org/filters).
   client.parse('||blacklistwebsite.com')
   client.parse('@@||whitelistwebsite.com');
   
@@ -23,7 +23,7 @@ initialize().then(() => {
 
 ```
 # Development commands -
-$ yarn test     # Runs the tests
-$ yarn build    # Parses the list of blocked sites
-$ yarn update   # Updates the list of blocked sites
+$ npm test          # Runs the tests
+$ npm build         # Parses the list of blocked sites
+$ npm run update    # Updates the list of blocked sites
 ```
