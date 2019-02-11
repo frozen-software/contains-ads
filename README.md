@@ -1,5 +1,6 @@
 # Contains Ads
 
+Forked for use in SkateBrowser.
 Checks if the specified url is an ad. Fork of `contains-ads`. Now with EasyList and EasyPrivacy.
 
 ```sh
