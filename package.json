@@ -1,9 +1,9 @@
 {
   "name": "contains-ads",
-  "version": "0.2.5",
-  "description": "Checks if the specified url contains advertisements",
-  "repository": "https://github.com/Jense5/contains-ads.git",
-  "author": "Jensen Bernard <jensenbernard5@gmail.com> (twitter.com/Jense5_)",
+  "version": "0.3.0",
+  "description": "Checks if the specified url contains advertisements using EasyList",
+  "repository": "https://github.com/frozen-software/contains-ads.git",
+  "author": "Elijah & Jensen Bernard <jensenbernard5@gmail.com> (twitter.com/Jense5_)",
   "license": "MPL",
   "keywords": [
     "contains-ad",
@@ -22,7 +22,9 @@
     "build": "node blocker",
     "postupdate": "node blocker",
     "prepublish": "npm run update",
-    "update": "rm blocker/blocked.txt && curl https://easylist.to/easylist/easylist.txt -o blocker/blocked.txt"
+    "updateAds": "rm blocker/ads.txt && curl https://easylist.to/easylist/easylist.txt -o blocker/ads.txt",
+    "updatePrivacy": "rm blocker/privacy.txt && curl https://easylist.to/easylist/easyprivacy.txt -o blocker/privacy.txt",
+    "update": "npm run updateAds && npm run updatePrivacy"
   },
   "dependencies": {
     "ad-block": "^4.1.1"
