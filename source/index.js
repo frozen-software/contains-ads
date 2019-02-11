@@ -16,7 +16,6 @@ const read = (file, resolve, reject) => {
 const shouldBlockInit = (opts) => new Promise((resolve, reject) => {
 	const p = opts.privacy || false;
 	const a = opts.ads || false;
-	console.log(p, a);
 	var done = 0;
 
 	// It's a bit trashy right now but I only had a few minutes.
